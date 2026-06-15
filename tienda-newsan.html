@@ -400,6 +400,95 @@
       }
       .section-title:before,.section-title:after{display:none}
     }
+  
+
+    /* Ajuste responsive ShopGallery: corrige sección "¿Cómo uso el beneficio?" en celulares */
+    @media(max-width:620px){
+      .page{
+        width:min(100%,94vw) !important;
+      }
+
+      .main-grid{
+        grid-template-columns:1fr !important;
+      }
+
+      .panel,
+      .small-card{
+        padding:22px !important;
+      }
+
+      .steps,
+      .benefit-list{
+        width:100% !important;
+      }
+
+      .step,
+      .benefit-item{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:flex-start !important;
+        gap:14px !important;
+        width:100% !important;
+      }
+
+      .step > div:last-child,
+      .benefit-item > div:last-child{
+        width:100% !important;
+        min-width:0 !important;
+      }
+
+      .number{
+        align-self:flex-start !important;
+        flex:0 0 auto !important;
+      }
+
+      .icon{
+        grid-column:auto !important;
+        margin-left:0 !important;
+        width:68px !important;
+        height:68px !important;
+        flex:0 0 auto !important;
+      }
+
+      .step h3,
+      .benefit-item h3{
+        font-size:28px !important;
+        line-height:1.15 !important;
+        margin-bottom:8px !important;
+        word-break:normal !important;
+        overflow-wrap:normal !important;
+      }
+
+      .step p,
+      .benefit-item p{
+        font-size:17px !important;
+        line-height:1.5 !important;
+        word-break:normal !important;
+        overflow-wrap:anywhere !important;
+      }
+
+      .web-row,
+      .info-card,
+      .inline-note{
+        grid-template-columns:1fr !important;
+        text-align:left !important;
+      }
+
+      .web-row span{
+        word-break:break-word !important;
+        overflow-wrap:anywhere !important;
+      }
+
+      .section-title{
+        grid-template-columns:1fr !important;
+      }
+
+      .section-title:before,
+      .section-title:after{
+        display:none !important;
+      }
+    }
+
   </style>
 </head>
 <body>
