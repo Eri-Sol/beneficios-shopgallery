@@ -460,7 +460,23 @@
       }
     }
 
-  </style>
+  
+/* Ajuste de lectura móvil en páginas de detalle */
+@media(max-width:720px){
+ html,body{max-width:100%;overflow-x:hidden}
+ .page{width:calc(100% - 28px)!important;max-width:100%!important;margin:auto!important;padding:16px 0 24px!important}
+ .hero,.panel,.small-card{max-width:100%!important;min-width:0!important;overflow:hidden!important}
+ .hero-image{height:auto!important;aspect-ratio:16/9!important;background-size:cover!important;background-position:center!important}
+ .hero-content,.hero-copy,.hero-body{max-width:100%!important;min-width:0!important}
+ .main-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:16px!important}
+ .panel,.small-card{padding:18px!important}
+ h1{font-size:clamp(28px,8vw,42px)!important;line-height:1.12!important;overflow-wrap:anywhere!important}
+ h2{font-size:clamp(21px,6vw,28px)!important;overflow-wrap:anywhere!important}
+ p,li,a{overflow-wrap:anywhere}
+ .step,.benefit-item{min-width:0!important}
+ .web-row{min-width:0!important}
+}
+</style>
 <style id="shopgallery-rebranding-b">
 
 /* Propuesta de rebranding 2026 - capa visual reversible */
